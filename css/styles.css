@@ -109,6 +109,7 @@ input[type="submit"]:hover {
 
 /*   */
 #dropdown-cart {
+  height: 80vh;
   padding: 1rem 4rem;
   overflow-y: scroll;
   color: white;
@@ -180,9 +181,6 @@ input[type="submit"]:hover {
   align-items: center;
 }
 
-
-
-
 .btn-add {
   height: 40px;
   width: 100px;
@@ -190,18 +188,16 @@ input[type="submit"]:hover {
   font-family: var(--title-font);
   position: absolute;
   right: 10px;
-  bottom: 10px;  
+  bottom: 10px;
   background-color: transparent;
-  transition-duration: .5s ;
-
+  transition-duration: 0.5s;
 }
 
 .btn-add:hover {
-  box-shadow: 1px 1px 4px 5px  grey;
+  box-shadow: 1px 1px 4px 5px grey;
   background-color: transparent;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
   color: gold;
-  
 }
 
 #movie-add > div:nth-child(3) {
@@ -305,7 +301,7 @@ h1 > i {
   display: flex;
   gap: 20px;
   padding: 20px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -315,8 +311,7 @@ h1 > i {
   width: 250px;
   height: 300px;
   position: relative;
-  box-shadow: 1px 1px 5px 1px  grey;
-
+  box-shadow: 1px 1px 5px 1px grey;
 }
 
 #movie-gallery-poster > img {
@@ -344,14 +339,13 @@ h1 > i {
 
 .btn-add-poster {
   background-color: transparent;
-  transition-duration: .5s ;
+  transition-duration: 0.5s;
 }
 .btn-add-poster:hover {
-  box-shadow: 1px 1px 4px 5px  grey;
+  box-shadow: 1px 1px 4px 5px grey;
   background-color: transparent;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
   color: gold;
-
 }
 
 /* movie-gallery-poster */

@@ -57,12 +57,30 @@
     grid-template-columns: 1fr;
     place-items: center;
   }
+
+  #dropdown-cart {
+    height: 60vh;
+  }
+
+  #movie-add{
+    height: 150px;
+  }
+
+  #movie-add-buttons{
+    flex-direction: row;
+  }
+
+  #movie-add > img {
+    width: 80px;
+    height: 100px;
+  }
+
+
 }
 @media (max-width: 635px) {
   #gallery-poster {
     justify-items: center;
-    grid-template-columns:  1fr;
-
+    grid-template-columns: 1fr;
   }
 
   #gallery-poster > img {
