@@ -89,6 +89,13 @@
 }
 
 @media (max-width: 480px) {
+  #movie-add-buttons > div{
+    width: 50px;
+  }
+
+  #dropdown-cart {
+    padding: 5px;
+  }
   #container-buttons-search {
     gap: 0.5rem;
   }
