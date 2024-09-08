@@ -140,7 +140,7 @@ h1 > i {
 .containers-renders {
   margin-top: 20px;
   padding: 1rem;
-  overflow: scroll auto;
+  overflow-Y: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
