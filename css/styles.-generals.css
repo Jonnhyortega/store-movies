@@ -12,7 +12,13 @@
   --fourth-color: rgb(163, 163, 163);
   --fiveth-color: rgb(255, 255, 255);
 }
-
+/* ***************************************************** */
+/* ***************************************************** */
+/* ***************************************************** */
+/* ***************************************************** */
+/* ***************************************************** */
+/* ***************************************************** */
+/* ***************************************************** */
 ::selection {
   color: gold;
 }
@@ -32,7 +38,6 @@ body {
   gap: 1rem;
 }
 
-/* HEADER */
 h1 {
   font-size: 4em;
   line-height: 1.1;
@@ -42,6 +47,8 @@ h1 {
   letter-spacing: 2px;
   text-align: center;
 }
+
+
 
 code {
   font-size: 3em;
@@ -60,38 +67,36 @@ h1 > i {
   border-bottom: 5px solid green;
 }
 
-/* FOOTER */
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-}
-
-footer > h1 {
-  font-size: 1rem;
-  text-shadow: none;
-}
-
-#links {
-  display: flex;
-  flex-direction: column;
-}
-
-#links > a {
-  text-align: left;
+.btn-add {
+  background-color: transparent;
+  transition-duration: 0.5s;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 3px;
+  width: 90%;
   color: white;
-  text-decoration: none;
 }
 
-#links > a:hover {
+.btn-add:hover {
+  background-color: black;
+  transition-duration: 0.5s;
   color: gold;
 }
-footer > p {
-  margin-top: 3rem;
-}
-/* FOOTER */
+/* ***************************************************** */
+/* ***************************************************** */
+/* ***************************************************** */
+/* ***************************************************** */
+/* ***************************************************** */
+/* ***************************************************** */
+/* ***************************************************** */
 
+/* ***************************************************** */
+/* ***************************************************** */
+/* ***************************************************** */
+/* ***************************************************** */
+/* ***************************************************** */
+/* ***************************************************** */
+/* ***************************************************** */
 /* ANIMATIONS */
 
 .lds-ring {
@@ -131,22 +136,21 @@ footer > p {
 }
 /* ANIMATIONS */
 
-
-
-
-
 /* GENERAL STYLES CONTAINERS RENDERS =)*/
-.containers-renders{
+.containers-renders {
+  margin-top: 20px;
   padding: 1rem;
-    overflow: scroll auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    width: 100%;
-    height: auto    ;
-    gap: 1rem;
-    border: 1px solid green;
-} 
+  overflow: scroll auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  width: 100%;
+  height: auto;
+  gap: 1rem;
+  border: 1px solid green;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px 1px green;
+}
 /* GENERAL STYLES CONTAINERS RENDERS =)*/

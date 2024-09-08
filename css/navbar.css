@@ -1,6 +1,6 @@
 /* General Styles */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.618);
+    background-color: rgba(91, 88, 88, 0.87);
     padding: .3rem 1em;
     width: 100%;
     border-bottom: 1px solid green;
@@ -9,7 +9,7 @@
   }
  
   .logo {
-    width: 50px;
+    width: 35px;
   }
 
   /* Navigation Links */
@@ -42,7 +42,7 @@
     height: 100vh;
     right: 0;
     background-color: black;
-    top: 10vh;
+    top: 9vh;
     display: none;
     padding: 0 100px 0 0;
     transition-duration: 2s;

@@ -1,0 +1,31 @@
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  footer > h1 {
+    font-size: 1rem;
+    text-shadow: none;
+  }
+  
+  #links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #links > a {
+    text-align: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  #links > a:hover {
+    color: gold;
+  }
+  footer > p {
+    margin-top: 3rem;
+  }
+  /* FOOTER */

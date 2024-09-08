@@ -53,16 +53,7 @@
     font-weight: 900;
   }
   
-  .btn-add-poster {
-    background-color: transparent;
-    transition-duration: 0.5s;
-    border: 1px solid black;
-  }
-  .btn-add-poster:hover {
-    background-color: transparent;
-    transition-duration: 0.5s;
-    color: gold;
-  }
+  
   
   /* movie-gallery-poster */
   

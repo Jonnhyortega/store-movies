@@ -39,6 +39,14 @@
 }
 
 @media (max-width: 568px){
+
+  /* hero */
+
+  #movie-gallery-poster {
+    width: 150px;
+    height: 200px;
+  }
+  /* hero */
 h2{
 font-size: 2em;
 }
@@ -58,6 +66,21 @@ font-size: 2em;
 }
 
 @media (max-width: 368px){
+   /* hero */
+
+   #movie-gallery-poster {
+    width: 130px;
+    height: 180px;
+  }
+  /* hero */
+
+  
+
+  /* CART */
+  #dropdown-cart{
+    padding: 2px;
+  }
+  /* CART */
 h2{
     font-size: 1.5em;
 }

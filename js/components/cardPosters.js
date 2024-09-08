@@ -5,11 +5,11 @@ export function createCardTemplateGallery(object) {
      <div id="movie-gallery-poster">
          <img id="img-gallery" loading="lazy" src="${object.Poster}" alt="${object.Title}">
              <div>        
-                 <span>${object.Title} - ${object.Year}</span>
+                 <span>${object.Title.length >= 7 ? object.Title.substring(0, 7) + "..." : object.Title } - ${object.Year}</span>
                  <span>${renderStarsRate(object.imdbRating)}</span>
                  <button id="${
                    object.Title
-                 }" class="btn-add-poster"><i class="fa-solid fa-cart-plus"></i>
+                 }" class="btn-add"><i class="fa-solid fa-cart-plus"></i>
                  </button>
              </div>
          

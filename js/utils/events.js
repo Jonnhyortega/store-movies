@@ -40,9 +40,9 @@ export async function searchMovie() {
   document.querySelector("#search-button").addEventListener("click", () => {
     let input = document.querySelector("#input-search-movie");
     let searchMoviesHTML = document.querySelector("#container-search-movies");
-    searchMoviesHTML.innerHTML = renderLoader();
     searchMoviesHTML.innerHTML = "";
     obtenerDatos(input.value).then((data) => {
+      searchMoviesHTML.innerHTML = renderLoader();
       if (!data) {
         searchMoviesHTML.innerHTML = `<p>La película que buscó no ha sido encontrada, por favor vuelva a intentarlo.</p>`;
       }

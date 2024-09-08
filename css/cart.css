@@ -1,7 +1,7 @@
 /* dropdowncart */
 
 #dropdown-cart {
-  height: 90vh;
+  height: 85vh;
   width: 70vh;
   overflow-y: auto;
   color: white;
@@ -10,9 +10,9 @@
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid rgba(209, 213, 219, 0.3);
   position: absolute;
-  top: 60px;
+  top: 47px;
   right: 2px;
-  display: none;
+  display: nonE;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -35,6 +35,7 @@
 }
 
 /* MOVIE ADD TEMPLATE */
+
 #movie-add {
   margin-top: 1rem;
   font-family: var(--title-font);
@@ -42,11 +43,15 @@
   border-radius: 5px;
   position: relative;
   gap: 1rem;
-  width: 50%;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
 }
 
 #movie-add > img {
-  width: 100%;
+  width: 100px;
 }
 
 .btn-increment,
@@ -86,6 +91,7 @@
   padding: 1rem;
   gap: 2px;
   border: 1px solid white;
+  width: 90%;
 }
 
 #buy-button,
@@ -118,4 +124,8 @@
 
 .deleteProducts {
   width: 100px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
 }
