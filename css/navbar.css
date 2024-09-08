@@ -1,0 +1,64 @@
+/* General Styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.618);
+    padding: .3rem 1em;
+    width: 100%;
+    border-bottom: 1px solid green;
+    position: fixed;
+    z-index: 1;
+  }
+ 
+  .logo {
+    width: 50px;
+  }
+
+  /* Navigation Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .nav-link:hover {
+    color: #ddd;
+  }
+  
+  /* Mobile Menu Toggle */
+  #menu-toggle {
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #menu_mobile {
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    background-color: black;
+    top: 10vh;
+    display: none;
+    padding: 0 100px 0 0;
+    transition-duration: 2s;
+  }
+  
+  #nav-links-mobile {
+    margin-top: 1em;
+    color: white;
+    list-style: none;
+  }
+  #nav-links-mobile > li > .nav-link{
+    margin-top: 1em;
+  }
+  
+  .show {
+    display: block;
+  }
+
+    /* Mobile Menu Toggle */

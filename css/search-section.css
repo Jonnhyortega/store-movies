@@ -1,0 +1,69 @@
+
+/* SEARCH MOVIES */
+#search-movies {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  #container-buttons-search {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  /* #container-search-movies {
+    width: 30%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    border-radius: 15px;
+  } */
+  
+  #container-search-movies > li {
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.139);
+    box-shadow: 1px 1px 5px 1px black;
+  }
+  
+  #container-search-movies > p {
+    font-size: 2rem;
+    color: white;
+    font-family: var(--title-font);
+    max-width: 200px;
+  }
+  #container-search-movies > span {
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    max-width: 200px;
+  }
+  
+  #input-search-movie {
+    background-color: transparent;
+    margin-left: 1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: white;
+    font: 2rem;
+    font-weight: 800;
+  }
+  
+  #search-button {
+    background-color: white;
+    padding: 0 2rem;
+    border: 1px solid black;
+  }
+  
+  #search-button:hover {
+    background-color: black;
+    border: 1px solid white;
+  }
+  
+  /* SEARCH MOVIES */
+  

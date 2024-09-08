@@ -1,0 +1,121 @@
+/* dropdowncart */
+
+#dropdown-cart {
+  height: 90vh;
+  width: 70vh;
+  overflow-y: auto;
+  color: white;
+  backdrop-filter: blur(25px) saturate(200%);
+  -webkit-backdrop-filter: blur(25px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  position: absolute;
+  top: 60px;
+  right: 2px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 35px;
+}
+
+#dropdown-cart::-webkit-scrollbar {
+  background-color: #888;
+  width: 5px;
+}
+
+#dropdown-cart::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  border: 1px solid #f1f1f1;
+  background-color: white;
+}
+
+#dropdown-cart::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(189, 189, 189);
+}
+
+/* MOVIE ADD TEMPLATE */
+#movie-add {
+  margin-top: 1rem;
+  font-family: var(--title-font);
+  font-weight: 700;
+  border-radius: 5px;
+  position: relative;
+  gap: 1rem;
+  width: 50%;
+}
+
+#movie-add > img {
+  width: 100%;
+}
+
+.btn-increment,
+.btn-decrement {
+  padding: 0.2em;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 4px;
+}
+
+#cart-empty {
+  font-size: 3.5rem;
+}
+
+#movie-add-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px 10px;
+}
+
+#sub-total {
+  display: flex;
+  justify-content: center;
+}
+
+/* MOVIE ADD TEMPLATE */
+#container-total {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 1rem;
+  gap: 2px;
+  border: 1px solid white;
+}
+
+#buy-button,
+#delete-all {
+  color: white;
+  width: 50%;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+#buy-button:hover {
+  background-color: gold;
+  color: black;
+}
+
+#delete-all:hover {
+  background-color: red;
+  color: white;
+}
+
+#container-total > p {
+  color: black;
+  font-weight: 800;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.deleteProducts {
+  width: 100px;
+}

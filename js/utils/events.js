@@ -35,8 +35,6 @@ export async function renderMovie(place, array) {
   addEventListenersToButtons();
 }
 
-//FUNCTION TO
-
 // FUNCTIONS TO SEARCH MOVIES
 export async function searchMovie() {
   document.querySelector("#search-button").addEventListener("click", () => {
@@ -111,7 +109,6 @@ export function filterMovies() {
   });
 }
 
-
 // FUNCTIONS GALLERY POSTERS
 export function addEventListenersToPosters() {
   let posters = document.querySelectorAll(".poster");
@@ -179,11 +176,5 @@ export function addEventListenersToButtons() {
         renderArrayCart();
       });
     });
-  });
-}
-
-export function avoidClosingMenu() {
-  document.querySelector("#dropdown-cart").addEventListener("click", (e) => {
-    e.stopPropagation();
   });
 }

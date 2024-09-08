@@ -1,0 +1,69 @@
+
+/* HERO */
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 4rem;
+  }
+
+  
+  #gallery-poster {
+    margin-top: 1em;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+  }
+  
+  /* movie-gallery-poster */
+  
+  #movie-gallery-poster {
+    width: 250px;
+    height: 300px;
+    position: relative;
+    box-shadow: 1px 1px 5px 1px grey;
+  }
+  
+  #movie-gallery-poster > img {
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+  
+  #movie-gallery-poster > div {
+    padding: 0.4em;
+    position: absolute;
+    bottom: 0;
+    backdrop-filter: blur(10.2px);
+    -webkit-backdrop-filter: blur(10.2px);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  
+  #movie-gallery-poster > div > span {
+    color: white;
+    font-weight: 900;
+  }
+  
+  .btn-add-poster {
+    background-color: transparent;
+    transition-duration: 0.5s;
+    border: 1px solid black;
+  }
+  .btn-add-poster:hover {
+    background-color: transparent;
+    transition-duration: 0.5s;
+    color: gold;
+  }
+  
+  /* movie-gallery-poster */
+  
+  /* HERO */

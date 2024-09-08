@@ -1,41 +1,48 @@
-import { avoidClosingMenu } from "./events.js";
 import { saveToLocalStorage, loadFromLocalStorage } from "./storage.js";
-import { obtenerDatos } from "./api.js";
-
 export let arrayCart = loadFromLocalStorage("arrayCart") || [];
 
 // Función para renderizar el carrito
 export function renderArrayCart() {
-  avoidClosingMenu();
   let totalProductsCart = 0;
   let cart = document.querySelector("#dropdown-cart");
   let numberProducts = document.querySelector("#number-products");
+
+  document.getElementById("cart").addEventListener("click", function () {
+    const dropdownCart = document.getElementById("dropdown-cart");
+    dropdownCart.style.display =
+      dropdownCart.style.display === "none" || dropdownCart.style.display === ""
+        ? "flex"
+        : "none";
+  });
+
 
   cart.innerHTML = "";
   if (arrayCart.length === 0) {
     cart.innerHTML = `<span id="cart-empty">Carrito vacío</span>`;
     numberProducts.textContent = totalProductsCart;
-  } else if(arrayCart.length > 0) {
+  } else if (arrayCart.length > 0) {
     cart.innerHTML = `<p>Productos <i class="fa-brands fa-product-hunt"></i></p>`;
     arrayCart.forEach((product) => {
       cart.innerHTML += `
         <div id="movie-add">
-          <img loading="lazy" src="${product.Poster}" alt="${product.Title}">
+          <img class="photo-gallery" src="${product.Poster}" alt="${product.Title}">
           <div id="movie-add-buttons">
-            <button class="btn-increment" data-title="${product.Title}"><i class="fa-solid fa-plus"></i></button>
+            <button class="btn-increment" data-title="${
+              product.Title
+            }"><i class="fa-solid fa-plus"></i></button>
             <span>${product.cantidad}</span>
-            <button class="btn-decrement" data-title="${product.Title}"><i class="fa-solid fa-minus"></i></button>
-          </div>
-          <div>
-            <span id="sub-total">Sub-total</span>
-            <span id="sub-total">$${product.price*product.cantidad}</span>
-          </div>
+            <button class="btn-decrement" data-title="${
+              product.Title
+            }"><i class="fa-solid fa-minus"></i></button>
+            </div>
+            <span id="sub-total">$${product.price * product.cantidad}</span>
         </div>
       `;
-      return 
+      
+      return;
     });
 
-    // Obtener total de la compra 
+    // Obtener total de la compra
     let total = 0;
     arrayCart.forEach((movie) => {
       let totalPrice = movie.price * movie.cantidad;
@@ -99,7 +106,7 @@ function deleteAllProducts() {
         <button id="cancelar" class="deleteProducts"><i class="fa-solid fa-circle-xmark"></i></button>
       </div>
     `;
-    document.querySelectorAll(".deleteProducts").forEach(btn => {
+    document.querySelectorAll(".deleteProducts").forEach((btn) => {
       btn.addEventListener("click", (e) => {
         if (e.currentTarget.id === "vaciar") {
           arrayCart = [];
@@ -112,8 +119,6 @@ function deleteAllProducts() {
     });
   });
 }
-
-
 
 // Función para obtener un número aleatorio entre un rango
 function getRandomInt(min, max) {

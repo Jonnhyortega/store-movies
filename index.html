@@ -17,90 +17,68 @@
       referrerpolicy="no-referrer"
     />
     <link rel="icon" href="/imgs/pelicula.png">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="/css/hero.css">
+    <link rel="stylesheet" href="/css/recommended-section.css">
+    <link rel="stylesheet" href="/css/movies-section.css">
+    <link rel="stylesheet" href="/css/search-section.css">
+    <link rel="stylesheet" href="/css/form.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/responsiveQuerys.css">
+
     <title>Store</title>
   </head>
   <body>
-    <!-- Header -->
-    <nav id="navbar" class="navbar navbar-expand-lg bg-dark navbar-dark">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                ><i class="fa-solid fa-couch"></i> GM</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Acciones
-              </a>
-              <ul id="dropdown-menu" class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#movies">Principales</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#hero">Recomendadas</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#search-movies"
-                    >Buscar Pelicula</a
-                  >
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#contact">Contacto</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span id="number-products"></span>
-              </a>
-              <div id="dropdown-cart" class="dropdown-menu"></div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
-    <!-- Hero o Portada -->
-    <section id="hero">
+<!-- Navbar -->
+  <!-- Navbar -->
+<nav class="navbar">
+    <img class="logo" src="/imgs/pelicula.png" alt="Logo">
+  <div class="navbar-container">
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#" class="nav-link">Inicio</a></li>
+      <li><a href="#movies" class="nav-link">Principales</a></li>
+      <li><a href="#hero" class="nav-link">Recomendadas</a></li>
+      <li><a href="#contact" class="nav-link">Contacto</a></li>
+    </ul>
+  </div>
+  
+  <div id="cart-icon-container">
+    <a href="#" id="cart" class="nav-link cart">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span id="number-products"></span>
+    </a>
+  </div>
+
+  <div id="menu_mobile">
+    <ul id="nav-links-mobile">
+      <li><a href="#" class="nav-link">Inicio</a></li>
+      <li><a href="#movies" class="nav-link">Principales</a></li>
+      <li><a href="#hero" class="nav-link">Recomendadas</a></li>
+      <li><a href="#contact" class="nav-link">Contacto</a></li>
+    </ul>
+  </div>
+
+  <div id="dropdown-cart" class=""></div>
+
+  <i id="menu-toggle" class="fa-solid fa-bars"></i>
+</nav>
+
+<!-- Hero o Portada -->
+<section id="hero">
+      <code>ATENCION: SITIO EN MANTENIMIENTO</code>
       <h1>Grant Movies <i class="fa-solid fa-couch"></i></h1>
-      <span class="line"></span>
-      <div id="gallery-poster"></div>
-    </section>
+      <span class="line"></span>    
+      <div id="gallery-poster"></div>                                                                                 
+</section>
 
 
     <!--RECOMMENDED MOVIES-->
-    <div id="recommended">
-      <h2>Nuestras recomendaciones</h2>
-      <ul id="list-recommended"></ul>
-    </div>
+<div id="recommended">
+  <h2>Nuestras recomendaciones</h2>
+  <ul id="list-recommended" class="containers-renders"></ul>
+</div>
 
     <!-- PRINCIPALES -->
     <section id="movies">
@@ -120,8 +98,7 @@
           <!-- Agregar más opciones según sea necesario -->
         </select>
       </div>
-      <div id="list-main-movies"></div>
-      <!-- <button>Ver más</button> -->
+      <div id="list-main-movies" class="containers-renders"></div>
     </section>
 
     <!-- SEARCH MOVIES -->
@@ -133,7 +110,7 @@
           <i class="fa-solid fa-magnifying-glass"></i>
         </submit>
       </div>
-      <div id="container-search-movies"></div>
+      <div id="container-search-movies" class="containers-renders"></div>
     </section>
 
     <!-- Contacto -->

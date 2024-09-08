@@ -1,0 +1,55 @@
+
+/* CONTACTO */
+#contact {
+    margin: 10rem auto;
+    width: 100%;
+    gap: 2rem;
+    margin: 0 auto;
+  }
+
+  #contact > span {
+    max-width: 200px;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-family: var(--title-font);
+    color: var(--fiveth-color);
+    font-size: 3em;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #contact-form {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    color: var(--fiveth-color);
+    font-weight: 800;
+    font-family: var(--title-font);
+  }
+  
+  #contact-form > label,
+  #contact-form > input,
+  #contact-form > textarea,
+  #contact-form > button {
+    width: 100%;
+  }
+  
+  /* #contact-form > input {
+    margin-top: 1rem;
+  }
+   */
+  #contact-form > #name-contact,
+  #contact-form > #email-contact {
+    font-size: 1rem;
+    color: red;
+    font-weight: 700;
+  }
+  
+  /* CONTACTO */

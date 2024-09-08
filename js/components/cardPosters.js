@@ -3,7 +3,7 @@ import { renderStarsRate } from "../utils/helpers.js";
 export function createCardTemplateGallery(object) {
   return `
      <div id="movie-gallery-poster">
-         <img loading="lazy" src="${object.Poster}" alt="${object.Title}">
+         <img id="img-gallery" loading="lazy" src="${object.Poster}" alt="${object.Title}">
              <div>        
                  <span>${object.Title} - ${object.Year}</span>
                  <span>${renderStarsRate(object.imdbRating)}</span>
