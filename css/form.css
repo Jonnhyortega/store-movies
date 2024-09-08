@@ -6,7 +6,6 @@
   }
 
   #contact > span {
-    max-width: 200px;
     color: white;
     font-size: 2rem;
     font-weight: 700;
@@ -19,12 +18,16 @@
     margin: 0 auto;
     text-align: center;
   }
-  
+
+  /* *{
+    border: 1px solID gold;
+  }
+   */
   #contact-form {
     margin: 0 auto;
-    width: 400px;
     display: flex;
     flex-direction: column;
+    gap: 5px;
     align-items: center;
     color: var(--fiveth-color);
     font-weight: 800;
@@ -33,6 +36,7 @@
   
   #contact-form > label{
     width: 100%;
+    text-align: center;
   }
 
   input[type = "submit"]{

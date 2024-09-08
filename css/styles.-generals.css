@@ -139,7 +139,6 @@ h1 > i {
 /* GENERAL STYLES CONTAINERS RENDERS =)*/
 .containers-renders {
   margin-top: 20px;
-  padding: 1rem;
   overflow-Y: auto;
   display: flex;
   flex-wrap: wrap;
@@ -149,8 +148,6 @@ h1 > i {
   width: 100%;
   height: auto;
   gap: 1rem;
-  border: 1px solid green;
   border-radius: 2px;
-  box-shadow: 1px 1px 5px 1px green;
 }
 /* GENERAL STYLES CONTAINERS RENDERS =)*/

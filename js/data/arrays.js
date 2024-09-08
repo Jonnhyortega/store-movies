@@ -109,7 +109,6 @@ export const arrayAll = [
     "Superbad",
     "The Hangover",
     "Step Brothers",
-    "Anchorman",
     "Bridesmaids",
     "Dumb and Dumber",
     "Tropic Thunder",
