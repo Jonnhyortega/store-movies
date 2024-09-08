@@ -74,7 +74,9 @@ font-size: 2em;
   }
   /* hero */
 
-  
+  #movie{
+    width: 120px;
+  }
 
   /* CART */
   #dropdown-cart{

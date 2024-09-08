@@ -178,3 +178,13 @@ export function addEventListenersToButtons() {
     });
   });
 }
+
+
+export function toggleMenu() { document.getElementById("menu-toggle").addEventListener("click", () => {
+  let menuMobile = document.getElementById("menu_mobile");
+  menuMobile.style.display =
+    menuMobile.style.display === "none" || menuMobile.style.display === ""
+      ? "flex"
+      : "none";
+  console.log("menu movil");
+})}

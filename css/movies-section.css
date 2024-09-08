@@ -1,13 +1,13 @@
 
 /* MAIN MOVIES */
 #movies {
-    width: 90%;
-    height: 90vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
+
   /* #list-main-movies {
     padding: 1rem;
     margin: 2rem auto;
